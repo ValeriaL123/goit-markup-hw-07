@@ -1,6 +1,6 @@
 /*  Переменные */
-:root {
-  /* Цвета */
+/* :root {
+  
   --accent-color: #2196f3;
   --bg-color: #ffffff;
   --title-color: #212121;
@@ -8,11 +8,11 @@
   --secondary-white-color: #ffffff;
   --margin-right-bottom:30px;
 
-  /* Шрифты */
+  
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --bg-color-hero-footer: #2f303a;
-}
+} */
 
 body {
   background-color: var(--bg-color);
@@ -22,7 +22,7 @@ body {
 }
 
 /* Сброс стилей */
-.link {
+/* .link {
   text-decoration: none;
 }
 .list {
@@ -44,11 +44,11 @@ ul, ol{
 img{
   display: block;
   max-width: 100%;
-}
+} */
 
 /* СПРЯТАННЫЕ ЗАГОЛОВКИ */
 
-.visually-hidden { 
+/* .visually-hidden { 
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -57,19 +57,19 @@ img{
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
+} */
 
 
 
 /* КОМПОНЕНТЫ*/
 
-.container{
+/* .container{
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
-}
+} */
 
 .btn {
   cursor: pointer;
@@ -795,42 +795,33 @@ display: inline-block;
 }
 
 
-
-
-
-
-
  /* ////////////////// */
-
-
-
-
-
 
 
 
 
 /* ПОРТФОЛИО */
 /* /////////// МЕНЮ*/
-.menu-section{
+.cards-wrap{
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.list.filters{
+.filter-list{
 display: flex;
 justify-content: center;
 margin-bottom: 50px;
 
 }
 
-.list-filters-item:not(:last-child){
+.filter-list__item:not(:last-child){
   margin-right: 8px;
 }
 
 
 
 /* ///////////КАТЕГОРИИ  */
-.menu-section .btn {
+ .filter-list__btn{
+   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -849,8 +840,8 @@ margin-bottom: 50px;
 
 }
 
-.menu-section .btn:hover,
-.menu-section .btn:focus {
+.filter-list__btn:hover,
+.filter-list__btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -862,6 +853,52 @@ margin-bottom: 50px;
 
 
 /*  Портфолио сетка */
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio__item{
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__item:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+
+.portfolio-cardset{
+background: #FFFFFF;
+border-left: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+padding: 20px 24px;
+}
+
+
+.portfolio-cardset__title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  margin-bottom: 4px;
+}
+
+.portfolio-cardset__text{
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
 
 
 .overlay{
@@ -869,7 +906,7 @@ margin-bottom: 50px;
   overflow: hidden;
 }
 
-.title-hover-overlay{
+.overlay__text{
   position: absolute;
   top: 0;
   left: 0;
@@ -890,8 +927,8 @@ margin-bottom: 50px;
   
 }
 
-.portfolio-link.link:hover .title-hover-overlay,
-.portfolio-link.link:focus .title-hover-overlay{
+.portfolio__link:hover .overlay__text,
+.portfolio__link:focus .title-hover-overlay{
   transform: translateY(0%);
   
 }
@@ -902,51 +939,6 @@ margin-bottom: 50px;
 /* ////// */
 
 
-.portfolio{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.list-portfolio-item{
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio>li:hover{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-}
-
-
-.list-portfolio-card{
-background: #FFFFFF;
-border-left: 1px solid #EEEEEE;
-border-right: 1px solid #EEEEEE;
-border-bottom: 1px solid #EEEEEE;
-padding: 20px 24px;
-}
-
-
-.portfolio .portfolio-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-color);
-  margin-bottom: 4px;
-}
-
-.portfolio .portfolio-text {
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
 
 
 /* /////// МОДАЛКА */
