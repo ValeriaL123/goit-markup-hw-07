@@ -21,3 +21,10 @@ img{
   display: block;
   max-width: 100%;
 }
+
+body {
+  background-color: $bg-color;
+  font-family: $main-font;
+  color: $title-color;
+  
+}

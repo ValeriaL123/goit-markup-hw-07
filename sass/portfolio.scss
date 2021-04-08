@@ -19,20 +19,12 @@
 @import './layout/header/navigation';
 @import './layout/header/contact';
 
-// main
-@import './layout/main/hero';
-@import './layout/main/features';
-@import './layout/main/content';
-@import './layout/main/description';
-@import './layout/main/social-link-icons';
-@import './layout/main/clients';
+// filters
+@import './layout/portfolio/main/filters';
+@import './layout/portfolio/main/portfolio';
+@import './layout/portfolio/main/overlay-animation';
 
 // footer
 @import './layout/footer/address';
 @import './layout/footer/social-links';
 @import './layout/footer/form-contact';
-
-// modal
-@import './layout/main/modal-form';
-@import './layout/main/modal-contact-form';
-@import './layout/main/modal-form-icon';

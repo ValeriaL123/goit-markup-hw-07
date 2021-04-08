@@ -1,0 +1,55 @@
+.team-galerry{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+
+ .description{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ .description__item{
+  background-color:$secondary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child){
+    margin-right: 30px;
+  }
+}
+
+
+
+.description-thumb{
+  padding-top: $margin-right-bottom;
+  padding-bottom: $margin-right-bottom; 
+  text-align: center;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color; 
+  }
+
+  &__description-thumb__text{
+    margin-bottom: 16px;
+  }
+
+}
+
+
+
+
+.description-title{
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $title-color;
+}
