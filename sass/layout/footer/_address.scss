@@ -2,12 +2,14 @@
 .footer{
   padding-top: 64px;
   padding-bottom: 55px;
+  background-color: $bg-color-hero-footer;
 
   &__container{
     display: flex;
     align-items: center;
   }
 }
+
 
 .address{
   margin-top: 20px;
