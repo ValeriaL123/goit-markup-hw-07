@@ -7,24 +7,16 @@
 // components
 @import './components/_btn';
 @import './components/section-title';
-@import './components/footer';
 @import './components/logo';
 @import './components/contact-info__icon';
 @import './components/social-link__icon';
 @import './components/backdrop';
 
 // header
-@import './layout/header/header';
-@import './layout/header/logo';
-@import './layout/header/navigation';
-@import './layout/header/contact';
+@import './layout/header';
 
-// filters
-@import './layout/portfolio/main/filters';
-@import './layout/portfolio/main/portfolio';
-@import './layout/portfolio/main/overlay-animation';
+// filters+portfolio
+@import './layout/main-portfolio';
 
 // footer
-@import './layout/footer/address';
-@import './layout/footer/social-links';
-@import './layout/footer/form-contact';
+@import './layout/footer';

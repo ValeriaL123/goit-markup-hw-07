@@ -13,23 +13,13 @@
 @import './components/backdrop';
 
 // header
-@import './layout/header/header';
-@import './layout/header/logo';
-@import './layout/header/navigation';
-@import './layout/header/contact';
+@import './layout/header';
 
 // main
-@import './layout/main/hero';
-@import './layout/main/features';
-@import './layout/main/content';
-@import './layout/main/description';
-@import './layout/main/social-link-icons';
-@import './layout/main/clients';
+@import './layout/main';
 
 // footer
-@import './layout/footer/address';
-@import './layout/footer/social-links';
-@import './layout/footer/form-contact';
+@import './layout/footer';
 
 // modal
 @import './layout/main/modal-form';
